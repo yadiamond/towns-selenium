@@ -133,7 +133,7 @@ def create(driver):
     image = driver.find_element(By.XPATH, '//*[@id="gradients"]')
     image.click()
     time.sleep(2)
-    image = input('Enter path to image')
+    image = input('Enter path to image: ')
     chrome_windows = find_windows(class_name='Chrome_WidgetWin_1')
     for hwnd in chrome_windows:
         app = Application().connect(handle=hwnd)
