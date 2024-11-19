@@ -12,8 +12,6 @@ import random
 authorization_way = input('Выберите способ входа в аккаунт/регистрации (google/email): ')
         
 options = Options()
-options.add_argument("user-data-dir=C:/Users/zxcdi/AppData/Local/Google/Chrome/User Data")
-options.add_argument("profile-directory=Default")
 options.add_argument('--disable-blink-features=AutomationControlled')
 
 driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=options)
